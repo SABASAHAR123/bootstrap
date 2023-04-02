@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /,
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    
+    <style>
+    body{ background-color: hsl(218, 41%, 15%); 
+          background-image: radial-gradient( 
+            650px circle at 0% 0%,
+            hsl(218, 41%, 35%), 15%,
+            hsl(218, 41%, 30%), 35%,
+            hsl(218, 41%, 20%), 75%,
+            hsl(218, 41%, 19%), 80%,
+            transparent 100%
+            ),
+            radial-gradient( 
+            1250px circle at 100% 100%,
+            hsl(218, 41%, 35%), 15%,
+            hsl(218, 41%, 30%), 35%,
+            hsl(218, 41%, 20%), 75%,
+            hsl(218, 41%, 19%), 80%,
+            transparent 100%
+            );
+        }
+        #card-custom{
+          width: 350px;
+          height: 500px;
+          background: hsla(0, 0%, 100%, 0.15);
+          backdrop-filter: blur(30px);
+        }
+
+
+        #shape-1{
+          height: 220px;
+          width: 220px;
+          background: radial-gradient(#44006b, #ad1fff);
+          bottom: -100px;
+          left: -90px;
+          z-index: -10;
+        }
+        #shape-2{
+          border-radius: 61% 39% 65% 35% / 32% 54% 46% 68%;
+          top:-100px;
+          right:10px;
+          width: 300px;
+          height:300px;
+          background: radial-gradient(#44006b, #ad1fff);
+          z-index: -10;
+        }
+
+     .fade{
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      padding: auto;
+      animation-name: fade-in;
+     }
+     .animation-delay-small{
+      animation-delay: 0.15s;
+     }
+     .animation-delay-medium{
+      animation-delay: 0.3s;
+     }
+     .animation-delay-big{
+      animation-delay: 0.4s;
+     }
+
+
+
+
+     @keyframes fade-in{
+      0%{
+         opacity: 0;
+        }
+      to {
+        opacity:1;
+      }
+     }
+    </style>
+  </head>
+  <body class="vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: hsl(219, 80%, 32%); font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PLATENIUM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-5 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Buy Now</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    
+
+    <div class="container h-100 text-white ">
+      <div class="row d-flex align-items-center h-100">
+        <div class="col-md-6">
+         <div class="fade">
+          <h1 class="mb-4 opacity-90" style="color: hsl(218, 81%, 95%);">Exclusive offer</h1>
+          <h5 class="mb-4 opacity-80" style="color: hsl(218, 81%, 90%);">Unlock a World of Luxury!</h5>
+          <p class= "mb-4 opacity-70"style="color: hsl(218, 81%, 85%);">Introducing our platinum credit card, designed for those who demand the very best.
+            Enjoy unparalleled benefits like premium travel rewards, exclusive access to events, and 24/7 concierge service.
+            With no annual fee for the first year and a low APR, now is the perfect time to upgrade your credit card.
+            Apply today and experience the ultimate in luxury and convenience with our platinum credit card.</p>
+           <a class="btn btn-white btn-lg btn-rounded me-3 opacity-80" href="#" role="button" data-ripple-color="hsl(218, 41%, 15%)">Buy now</a>
+           <a class="btn btn-outline-white btn-lg btn-rounded opacity-80" href="#" role="button">Learn more</a>
+         </div>
+        </div>
+        <div class="col-md-5 offset-md-1 position-realative">
+
+         <div id="shape-1" class="position-absolute rounded-circle strong-5-strong fade animation-delay-small"></div>
+         <div id="shape-2" class="position-absolute strong-5-strong fade animation-delay-medium"></div>
+
+          <div id="card-custom" class="card shadow-6 rounded-6 fade animation-delay-big">
+            <div class="card-body p-5 opacity-90 ls-widest">
+
+              <h2>
+                <strong>Platenium</strong>
+                <span class="fw-light">card</span>
+              </h2>
+            </div>
+            <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light">
+
+              <img src="img/chip.png" alt="" class="mb-5" style="width: 50px" backgound="none"/>
+              <h5 class="mb-5">1234 4567 8672 9032</h5>
+              <p class="mb-2"> Saba Sahar</p>
+              <p class="mb-5">12/25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <footer class="background-color: hsl(218, 41%, 15%)text-white" text-align="container-fluid">
+      <div class="container py-1">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 style="color: hsl(218, 81%, 90%);">CONTACT US</h5>
+            <p style="color: hsl(218, 81%, 85%);">Apply today to start enjoying the exceptional benefits that come with being a Platinum Card member.</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <h5 style="color: hsl(218, 81%, 95%);">Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center py-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <p>&copy; 2023 TECH WHIZ</p>
+      </div>
+    </footer>
+
+
+    
+    
+
+    
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#card-custom"),{
+        startX: 45,
+        startY: 45,
+        rest:false,
+      });
+    </script>
+  </body>
+</html>
+
